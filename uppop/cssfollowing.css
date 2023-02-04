@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f5f5f5;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    display:flex;
+    flex-direction:row;
+    background-color: white;
+    width:100%;
+    height:55px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.mainbutton{
+    display: flex;
+    align-items: center;
+    gap:85px;
+    justify-self:center;
+    margin-left: 116px;
+
+    
+}
+
+
+.profile-button{
+    display:flex;
+    align-items:center;
+    justify-self: flex-end;
+
+}
+
+.profile{
+    display: flex;
+    padding: 7px 14px;
+    border: 1px solid #777777;
+    margin-left: 34px;
+    margin-right: 50px;
+    min-width: 140px;
+    align-items: center;
+    border-radius: 12px;
+}
+
+
+.size-profile{
+    display: block;
+    width: 26px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.image-profile{
+    margin-right: 5px;
+}
+
+.poplogo{
+    display: flex;
+    justify-self:flex-start;
+    margin-left: 16px;
+}
+
+.name-profile{
+    font-size: 16px;
+    color: #01919C;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
