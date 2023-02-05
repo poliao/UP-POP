@@ -26,24 +26,21 @@ document.querySelectorAll(".hit").forEach((element) => {
     })
 })
 
-let canChange = false
 //bg-slate-200/50 hover:shadow-lg hover:shadow-black/25 w-fit px-2 rounded-full self-end  text-white
-//<ion-icon name="star"></ion-icon>
+
 allFavBtn.forEach((element) => {
     
     element.addEventListener('click', ()=> {
-
-        if(element.id == "fav-btn-1" && canChange){
-            element.className = "bg-amber-300/50 hover:shadow-lg hover:shadow-black/25 w-fit px-2 rounded-full self-end  text-amber-300 text-5xl"
-            element.children[0].setAttribute('name', 'star')
-        }else if(element.id != "fav-btn-1" && canChange) {
-            element.className = "bg-amber-300/50 hover:shadow-lg hover:shadow-black/25 w-fit px-2 rounded-full self-end  text-amber-300"
-            element.children[0].setAttribute('name', 'star')
+        if(element.id == "fav-btn-1"){
+            element.className = "bg-black/25 hover:shadow-lg hover:shadow-black/25 w-fit px-2 rounded-full self-end  text-amber-400 text-5xl border-2 border-white/50"
+            
+        }else if(element.id != "fav-btn-1") {
+            element.className = "bg-black/25 hover:shadow-lg hover:shadow-black/25 w-fit px-2 rounded-full self-end  text-amber-400 border-2 border-white/50"
         }
-        let nodeList = element.children
-        
-        
 
+        element.children[0].setAttribute('name', 'star')
+
+        let nodeList = element.children
         console.log(nodeList);
     })
 })
