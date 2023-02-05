@@ -25,46 +25,91 @@
                 </div>
             </div>
         </div>
-        <div class="main-content">
-            <div class="coming-soon">
-                <p>เร็วๆนี้</p>
-                <div class="main-carousel">
-                    <div class="cell1"><img src="image-uppop/card-1.svg" alt="" style="margin-right: 25px;"></div>
-                    <div class="cell2"><img src="image-uppop/card-2.svg" alt=""></div>
-                  </div>
-            </div>
-            <div class="following-show">
-                <p>กำลังติดตาม</p>
-                <div class="following-card1"><img src="image-uppop/" alt=""></div>
-            </div>
-        </div >
-        <div class="category">
-            <div class="text-flex">
-                <p class="text-main-cate">หมวดหมู่กิจกรรม</p>
-                <p class="all-cate">ดูทั้งหมด</p>
-            </div>
-            <div class="select-cate">
-                <div>
-                    <div class="1 border-cate" style="margin:0;"><img src="image-uppop/LOGOUP.svg" alt=""></div>
-                    <p class="text-incate" style="text-align: center;">ม.พะเยา</p>
-                </div>
-                <div class="in-cate">
-                    <div class="2 border-cate"><img class="center-image" src="image-uppop/faculty.svg" alt="">
+        <div class="all-content">
+            <div class="main-content">
+                <div class="coming-soon">
+                    <p>เร็วๆนี้</p>
+                    <div class="main-carousel">
+                        <div class="cell1">
+                            <img src="image-uppop/coming-card1.svg" alt=""> 
+                            <button class="star-follow" id="star-followed1" onclick="followed1()" value="Following"><img src="image-uppop/star-before.svg" alt="" id="star-chage1" ></button>
+                            <div class="back-black-comingcard1">
+                            <div style="padding-left: 30px; padding-top: 10px;" >
+                                <div style="color: white;" class="main-text-comingcard1">กิจกรรมต้อนรับปีใหม่ มหาวิทยาลัยพะเยา</div>
+                                <div class="secode-text-comingcard1">
+                                    <img style="width: 45.42px;" src="image-uppop/calendar-vector-white.svg" alt="">
+                                    <div style="padding-left:17px;">13 ม.ย 2566
+                                    </div>
+                                </div>
+                            </div >
+                        </div>
                     </div>
-                    <p class="text-incate">คณะ</p>
+                        <div class="cell2"><img src="image-uppop/coming-card2.svg" alt="">
+                            <button class="star-follow" id="star-followed2" onclick="followed2()" value="Following"><img src="image-uppop/star-before.svg" alt="" id="star-chage2"></button>
+                            <div class="back-black-comingcard2">
+                                <div style="padding-left: 30px; padding-top: 10px;" >
+                                    <div style="color: white;" class="main-text-comingcard2">กิจกรรมต้อนรับปีใหม่ มหาวิทยาลัยพะเยา</div>
+                                    <div class="secode-text-comingcard2">
+                                        <img style="width: 45.42px;" src="image-uppop/calendar-vector-white.svg" alt="">
+                                        <div style="padding-left:17px;">13 ม.ย 2566
+                                        </div>
+                                    </div>
+                                </div >
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="in-cate">
-                    <div class="3 border-cate"><img class="center-image"  src="image-uppop/club.svg" alt=""></div>
-                    <p class="text-incate">ชมรม</p>
-                </div>
-                <div class="in-cate">
-                    <div class="4 border-cate"><img class="center-image"  src="image-uppop/volunteer.svg" alt=""></div>
-                    <p class="text-incate">จิตอาสา</p>
-                </div>
-                
+                    <div class="category">
+                             <div class="text-flex">
+                                 <p class="text-main-cate">หมวดหมู่กิจกรรม</p>
+                                 <p class="all-cate">ดูทั้งหมด</p>
+                             </div>
+                             <div class="select-cate">
+                                 <div>
+                                     <div class="1 border-cate" style="margin:0;"><img class="center-image1" src="image-uppop/LOGOUP.svg" alt=""></div>
+                                     <p class="text-incate" style="text-align: center;">ม.พะเยา</p>
+                                 </div>
+                                 <div class="in-cate">
+                                     <div class="2 border-cate"><img class="center-image" src="image-uppop/faculty.svg" alt="">
+                                     </div>
+                                     <p class="text-incate">คณะ</p>
+                                 </div>
+                                 <div class="in-cate">
+                                     <div class="3 border-cate"><img class="center-image"  src="image-uppop/club.svg" alt=""></div>
+                                     <p class="text-incate">ชมรม</p>
+                                 </div>
+                                 <div class="in-cate">
+                                     <div class="4 border-cate"><img class="center-image"  src="image-uppop/volunteer.svg" alt=""></div>
+                                     <p class="text-incate">จิตอาสา</p>
+                                 </div>
+                             </div>
+                         </div>
+                </div >
+                    <div class="following-show">
+                        <div class="text-following">กำลังติดตาม</div>
+                        <div class="main-songkran1" style="padding-top: 10px;">
+                            <img class="center" src="image-uppop/songkram-card-follow.svg" alt="">
+                            <div class="back-black">
+                                <div style="color: white;" class="main-text-card">กิจกรรมต้อนรับปีใหม่ มหาวิทยาลัยพะเยา</div>
+                                <div class="secode-text-card">
+                                    <img src="image-uppop/calendar-vector-white.svg" alt="">
+                                    <div style="padding-left:4px;">13 ม.ย 2566</div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="main-songkran2" style="padding-top: 20px;">
+                                <img class="center" src="image-uppop/songkram-card2-follow.svg" alt="">
+                                <div class="back-black">
+                                    <div style="color: white;" class="main-text-card">กิจกรรมต้อนรับปีใหม่ มหาวิทยาลัยพะเยา</div>
+                                    <div class="secode-text-card">
+                                        <img src="image-uppop/calendar-vector-white.svg" alt="">
+                                        <div style="padding-left:4px;">13 ม.ย 2566</div>
+                                    </div>
+                                </div>
+                                </div>
+                        </div >
+        </div >
             </div>
-        </div>
-    </div>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="upmain.js"></script>
 </body>
