@@ -84,19 +84,13 @@ nav li {
 }
 
 /* Activity Cards */
-#card {
-    background-image: url("./Image/activity_card.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-clip: padding-box;
-}
-
-#card > section {
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
 #fav-btn {
-    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    margin: 6px 6px 0 0;
 }
+
+#cardA-1, #cardA-2, #cardA-3, #cardB-1, #cardB-2, #cardB-3 {
+    cursor: pointer;
+}
+
 

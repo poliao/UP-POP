@@ -1,125 +1,49 @@
-const favButton = document.getElementById("fav-btn")
-const body = document.body
+const myBody = document.body
 
-/*favorite button event*/
-let turnOn = false;
+//#cardA-1, #cardA-2, #cardA-3, #cardB-1, #cardB-2, #cardB-3
 
-favButton.addEventListener('click' , ()=> {
-    let star = document.getElementById("star-fav")
-    let getSyle = favButton.style
-    showBackdrop()
+const allElementCard = [
+    document.getElementById("cardA-1"),
+    document.getElementById("cardA-2"),
+    document.getElementById("cardA-3"),
+    document.getElementById("cardB-1"),
+    document.getElementById("cardB-2"),
+    document.getElementById("cardB-3"),
+]
+
+const allFavBtn = [
+    document.getElementById("fav-btn-1"),
+    document.getElementById("fav-btn-2"),
+    document.getElementById("fav-btn-3"),
+    document.getElementById("fav-btn-4"),
+    document.getElementById("fav-btn-5"),
+    document.getElementById("fav-btn-6"),
+]
+
+document.querySelectorAll(".hit").forEach((element) => {
+    element.addEventListener('click', ()=> {
+        window.open("https://www.google.com/", "_self")
+    })
 })
 
-function showBackdrop() {
-    //initialize
-    let star = document.getElementById("star-fav")
-    let getSyle = favButton.style
-    let yesORno = "<span class= \" underline decoration-pink-500/50 decoration-4  underline-offset-2\">ใช่หรือไม่<span>"
-    //new element
-    let backdrop = document.createElement('div')
-    let content = document.createElement('p')
-    let confirm = document.createElement('input')
-    let cancle = document.createElement('input')
-    let card = document.createElement('div')
-    let container = document.createElement('div')
-    let _id = "backdrop"
-    /* Backdrop */
-    backdrop.id = _id
-    backdrop.className = "bg-slate-900/60 w-full h-full inset-0 fixed flex flex-col items-center justify-center"
+let canChange = false
+//bg-slate-200/50 hover:shadow-lg hover:shadow-black/25 w-fit px-2 rounded-full self-end  text-white
+//<ion-icon name="star"></ion-icon>
+allFavBtn.forEach((element) => {
+    
+    element.addEventListener('click', ()=> {
 
-    /* Content */
-    if(!turnOn){
-        content.innerHTML = `คุณต้องการติดตามกิจกรรมนี้ ${yesORno}`
-    
-        confirm.setAttribute('type', "button")
-        cancle.setAttribute('type', "button")
-    
-        confirm.value = "ใช่"
-        cancle.value = "ไม่ใช่"
-    
-        let = arr = [confirm, cancle]
-        arr.forEach(element => {
-            element.className = "p-1 cursor-pointer" + " "//for a white space
-        });
-    
-        confirm.className += "grow-[2] bg-green-500 rounded-md"
-        cancle.className += "grow border-2 border-rose-700 rounded-md"
-        /**Add event click */
-        confirm.addEventListener('click', ()=> {
-            body.removeChild(document.getElementById(_id))
-            star.setAttribute("name", "star")
-            getSyle.color = "rgba(251, 191, 36, 1)";
-            getSyle.backgroundColor = "rgba(251, 191, 36, 0.6)"
-            getSyle.opacity = "1"
-            turnOn = true
-        })
-        cancle.addEventListener('click', ()=> {
-            body.removeChild(document.getElementById(_id))
-            star.setAttribute("name","star-outline")
-            getSyle.color = "white";
-            getSyle.backgroundColor = "rgba(255, 255, 255, 0.3)"
-            getSyle.opacity = "0.8"
-            turnOn = false
-        })
-        /**Contaner */
+        if(element.id == "fav-btn-1" && canChange){
+            element.className = "bg-amber-300/50 hover:shadow-lg hover:shadow-black/25 w-fit px-2 rounded-full self-end  text-amber-300 text-5xl"
+            element.children[0].setAttribute('name', 'star')
+        }else if(element.id != "fav-btn-1" && canChange) {
+            element.className = "bg-amber-300/50 hover:shadow-lg hover:shadow-black/25 w-fit px-2 rounded-full self-end  text-amber-300"
+            element.children[0].setAttribute('name', 'star')
+        }
+        let nodeList = element.children
         
-        container.className = "flex flex-row flex-2 w-full gap-2 mt-[12px]"
-    
-        container.appendChild(confirm)
-        container.appendChild(cancle)
-    
-        /** Card */
-        card.className = "self-center justify-self-center"
-    }else {
-        content.innerHTML = `ยกเลิกการติดตามกิจกรรมนี้ ${yesORno}`
-    
-        confirm.setAttribute('type', "button")
-        cancle.setAttribute('type', "button")
-    
-        confirm.value = "ใช่"
-        cancle.value = "ไม่ใช่"
-    
-        let = arr = [confirm, cancle]
-        arr.forEach(element => {
-            element.className = "p-1 cursor-pointer" + " "//for a white space
-        });
-    
-        confirm.className += "grow-[2] bg-green-500 rounded-md"
-        cancle.className += "grow border-2 border-rose-700 rounded-md"
-        /**Add event click */
-        confirm.addEventListener('click', ()=> {
-            body.removeChild(document.getElementById(_id))
-            star.setAttribute("name","star-outline")
-            getSyle.color = "white";
-            getSyle.backgroundColor = "rgba(255, 255, 255, 0.3)"
-            getSyle.opacity = "0.8"
-            turnOn = false
-        })
-        cancle.addEventListener('click', ()=> {
-            body.removeChild(document.getElementById(_id))
-            star.setAttribute("name", "star")
-            getSyle.color = "rgba(251, 191, 36, 1)";
-            getSyle.backgroundColor = "rgba(251, 191, 36, 0.6)"
-            getSyle.opacity = "1"
-            turnOn = true
-        })
-        /**Contaner */
         
-        container.className = "flex flex-row flex-2 w-full gap-2 mt-[12px]"
-    
-        container.appendChild(confirm)
-        container.appendChild(cancle)
-    
-        /** Card */
-        card.className = "self-center justify-self-center"    
-    }
 
-
-
-
-    card.appendChild(content)
-    card.appendChild(container)
-    
-    backdrop.appendChild(card)
-    body.appendChild(backdrop)
-}
+        console.log(nodeList);
+    })
+})

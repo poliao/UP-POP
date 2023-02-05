@@ -10,7 +10,7 @@
     <title>UP POP</title>
 </head>
 
-<body class="bg-slate-200">
+<body class="bg-slate-200 overflow-auto">
     <header>
         <nav class=" bg-white flex flex-row justify-between pt-2 pb-2">
             <div class="left-nav">
@@ -41,27 +41,144 @@
         </nav>
     </header>
 
-<main>
-    <div class="container max-w-xs">
-        <div id="card" class="flex flex-col h-40 justify-between rounded-3xl cursor-pointer">
-            <div id="fav-btn" 
-            class="cursor-pointer w-fit h-fit self-end mr-4 mt-4 rounded-full px-4 text-white/80 hover:opacity-100 active:text-amber-400 active:bg-amber-200">
-                <ion-icon id="star-fav" name="star-outline" size="large"></ion-icon>
-            </div>
-                
-            <section 
-            class="self-end bg-black w-full mb-1.5 rounded-t-none m-0.5 px-6 py-2
-            rounded-b-2xl pointer-events-none select-none">
-                <h1 class="font-bold text-white text-sm">
-                    กิจกรรมต้อนรับปีใหม่ มหาวิทยาลัยพะเยา
-                </h1>
-                <p class="font-light text-white text-xs">1 ม.ค. 2566</p>
-            </section>
-        </div>
-        
-    </div>
+    <main class="w-full h-full flex flex-col justify-center items-center">
+        <!--Cotainer-->
+        <div id="content" class="bg-white w-[75%] h-fit mt-6 flex flex-auto md:flex-row gap-4 py-6">
 
-</main>
+            <div id="left-content" class="flex-grow-[2] mx-12 flex flex-col gap-4">
+                <h1 class="text-lg mb-5 pointer-events-none select-none">กิจกรรมที่ติดตาม</h1>
+                <!--Card-->
+                <div id="main-card"
+                    class="flex flex-col h-40 w-full justify-between relative bg-no-repeat bg-center bg-cover bg-clip-padding rounded-xl"
+                    style="background-image: url(./Image/thumnail.svg)">
+                    <button class="bg-teal-600 rounded-lg text-white w-fit px-3 py-1 self-end font-bold mt-3 mr-3">
+                        อ่านเพิ่มเติม
+                    </button>
+
+                    <section class="bg-slate-100 self-start text-black w-full px-2 pl-24 py-4 rounded-b-xl">
+                        <p>หน้าหลักกิจกรรมจิตอาสา</p>
+                    </section>
+
+                    <div class="rounded-full bg-no-repeat bg-cover bg-center h-16 w-16 absolute top-20 left-4 border border-teal-"
+                        style="background-image: url(./Image/kkk.jpg);">
+                    </div>
+                </div>
+
+                <div id="cardA-1" style="background-image: url(./Image/new_year.jpg);"
+                    class="relative bg-scroll bg-clip-content bg-no-repeat bg-cover h-[256px]  w-full flex flex-col justify-between rounded-lg">
+                    <div id="fav-btn-1"
+                        class="bg-slate-200/50 hover:shadow-lg hover:shadow-black/25 w-fit px-2 rounded-full self-end  text-white text-5xl">
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <section class="bg-black/50 h-fit w-full text-white rounded-b-lg px-4 flex flex-col justify-center">
+                        <h1 class="text-lg font-medium mb-1">กิจกรรมต้อนรับปีใหม่ มหาวิทยาลัยพะเยา</h1>
+                        <p class="font-light text-base mb-1">
+                            <ion-icon name="calendar"></ion-icon> <span class="ml-2">31 ธ.ค. 2565</span>
+                        </p>
+                    </section>
+                    <div class="hit absolute w-[89%] h-full"></div>
+                    
+                </div>
+
+                <div class="w-full flex md:flex-row  gap-4">
+
+                    <div id="cardA-2" style="background-image: url(./Image/new_year.jpg);"
+                        class="relative bg-scroll bg-clip-content bg-no-repeat bg-cover h-[128px] flex-grow flex flex-col justify-between rounded-lg">
+                        <div id="fav-btn-2"
+                            class="bg-slate-200/50 hover:shadow-lg hover:shadow-black/25 w-fit px-2 rounded-full self-end  text-white ">
+                            <ion-icon name="star-outline" size="large"></ion-icon>
+                        </div>
+
+                        <section class="bg-black/50 w-full text-white rounded-b-lg px-4 flex flex-col justify-center">
+                            <h1 class="text-sm font-medium mb-1">กิจกรรมต้อนรับปีใหม่ มหาวิทยาลัยพะเยา</h1>
+                            <p class="font-light text-xs mb-1">
+                                <ion-icon name="calendar"></ion-icon> <span class="ml-2">31 ธ.ค. 2565</span>
+                            </p>
+                        </section>
+                        <div class="hit absolute w-[82.5%] h-full"></div>
+                        
+                    </div>
+
+                    <div id="cardA-3" style="background-image: url(./Image/new_year.jpg);"
+                        class="relative bg-scroll bg-clip-content bg-no-repeat bg-cover h-[128px] flex-grow flex flex-col justify-between rounded-lg">
+                        <div id="fav-btn-3"
+                            class="bg-slate-200/50 hover:shadow-lg hover:shadow-black/25 w-fit px-2 rounded-full self-end  text-white">
+                            <ion-icon name="star-outline" size="large"></ion-icon>
+                        </div>
+
+                        <section class="bg-black/50 w-full text-white rounded-b-lg px-4 flex flex-col justify-center">
+                            <h1 class="text-sm font-medium mb-1">กิจกรรมต้อนรับปีใหม่ มหาวิทยาลัยพะเยา</h1>
+                            <p class="font-light text-xs mb-1">
+                                <ion-icon name="calendar"></ion-icon> <span class="ml-2">31 ธ.ค. 2565</span>
+                            </p>
+                        </section>
+                        <div class="hit absolute w-[82.5%] h-full"></div>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="right-content" class=" flex-grow flex flex-col gap-6 mt-9 ">
+
+                <div id="cardB-1" style="background-image: url(./Image/new_year.jpg);"
+                    class="relative bg-scroll bg-clip-content bg-no-repeat bg-cover h-[128px]  w-80 flex flex-col justify-between rounded-lg">
+                    <div id="fav-btn-4"
+                        class="bg-slate-200/50 hover:shadow-lg hover:shadow-black/25 w-fit px-2 rounded-full self-end  text-white">
+                        <ion-icon name="star-outline" size="large"></ion-icon>
+                    </div>
+
+                    <section class="bg-black/50 w-full text-white rounded-b-lg px-4 flex flex-col justify-center">
+                        <h1 class="text-sm font-medium mb-1">กิจกรรมต้อนรับปีใหม่ มหาวิทยาลัยพะเยา</h1>
+                        <p class="font-light text-xs mb-1">
+                            <ion-icon name="calendar"></ion-icon> <span class="ml-2">31 ธ.ค. 2565</span>
+                        </p>
+                    </section>
+                    <div class="hit absolute w-[82.5%] h-full"></div>
+                    
+                </div>
+
+                <div id="cardB-2" style="background-image: url(./Image/new_year_thai.jpg);"
+                    class="relative bg-scroll bg-clip-content bg-no-repeat bg-cover bg-center h-[128px]  w-80 flex flex-col justify-between rounded-lg">
+                    <div id="fav-btn-5"
+                        class="bg-slate-200/50 hover:shadow-lg hover:shadow-black/25 w-fit px-2 rounded-full self-end  text-white">
+                        <ion-icon name="star-outline" size="large"></ion-icon>
+                    </div>
+
+                    <section class="bg-black/50 w-full text-white rounded-b-lg px-4 flex flex-col justify-center">
+                        <h1 class="text-sm font-medium mb-1">กิจกรรมต้อนรับปีใหม่ มหาวิทยาลัยพะเยา</h1>
+                        <p class="font-light text-xs mb-1">
+                            <ion-icon name="calendar"></ion-icon> <span class="ml-2">31 ธ.ค. 2565</span>
+                        </p>
+                    </section>
+                    <div class="hit absolute w-[82.5%] h-full"></div>
+                    
+                </div>
+
+                <div id="cardB-3" style="background-image: url(./Image/bus.jpg);"
+                    class="relative bg-scroll bg-clip-content bg-no-repeat bg-cover h-[128px]  w-80 flex flex-col justify-between rounded-lg">
+                    <div id="fav-btn-6"
+                        class="bg-slate-200/50 hover:shadow-lg hover:shadow-black/25 w-fit px-2 rounded-full self-end  text-white">
+                        <ion-icon name="star-outline" size="large"></ion-icon>
+                    </div>
+
+                    <section class="bg-black/50 w-full text-white rounded-b-lg px-4 flex flex-col justify-center">
+                        <h1 class="text-sm font-medium mb-1">กิจกรรมต้อนรับปีใหม่ มหาวิทยาลัยพะเยา</h1>
+                        <p class="font-light text-xs mb-1">
+                            <ion-icon name="calendar"></ion-icon> <span class="ml-2">31 ธ.ค. 2565</span>
+                        </p>
+                    </section>
+                    <div class="hit absolute w-[82.5%] h-full"></div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </main>
+
 
 
 
