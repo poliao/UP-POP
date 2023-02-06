@@ -212,6 +212,7 @@ body{
 .center{
     display: block;
     margin: auto;
+    margin-bottom: 10px;
 }
 
 .main-songkran1{
@@ -331,8 +332,6 @@ body{
 .star-follow:hover{
     background-color: #FFDD02;
 }
-
-
 
 
 @media screen {
