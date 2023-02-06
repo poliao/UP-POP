@@ -327,6 +327,7 @@ body{
     border-radius: 26px;
     margin: 25px;
     border: 0;
+    cursor: pointer;
 }
 
 .star-follow:hover{
