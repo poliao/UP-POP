@@ -76,7 +76,9 @@ function followed2(){
 
 function addactivity(){
   const createnew = document.createElement('img');
-      createnew.src = "image-uppop/new-add-one.svg";
+      createnew.src = "image-uppop/new-add.svg";
       document.getElementById('new-add').appendChild(createnew);
 }
 
+
+console.log(setting);
