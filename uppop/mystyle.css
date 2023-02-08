@@ -313,9 +313,8 @@ body{
 
 
 .all-content{
-    display: flex;
-    justify-content:center;
-    
+    display:flex;
+    justify-content: center;
 }
 
 .star-follow{
@@ -334,14 +333,6 @@ body{
 .star-follow:hover{
     background-color: #FFDD02;
 }
-
-
-.flex-colum{
-    display: flex;
-    flex-direction: column;
-}
-
-
 
 
 @media screen {
