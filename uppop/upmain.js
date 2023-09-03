@@ -73,4 +73,12 @@ function followed2(){
   }
 }
 
-
+const dataCon = document.getElementById("cell1")
+fetch("https://apiuppop.15-panupanu.repl.co")
+  .then(response => response.json())
+  .then(data => {
+        data.forEach(posr => {
+          console.log(post);
+          const postElement = document.createElement("p");
+        });
+  })
